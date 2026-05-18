@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact | IDSC</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/gsap.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/ScrollTrigger.min.js"></script>
+</head>
+<body>
+
+    <div id="loader">IDSC.</div>
+    <div class="cursor-glow"></div>
+
+    <nav>
+        <a href="index.html" class="brand">IDSC</a>
+        <div class="nav-links">
+            <a href="index.html">Home</a>
+            <a href="team.html">Team</a>
+            <a href="events.html">Events</a>
+            <a href="about.html">About</a>
+            <a href="contact.html">Contact</a>
+            <a href="upload-article.html">Submit Article</a>
+        </div>
+        <div>
+            <a href="join.html" class="btn-outline" style="margin-right: 15px;">Join Us</a>
+            <a href="login.html" class="btn-primary">Portal Login</a>
+        </div>
+    </nav>
+
+    <main>
+        <section class="hero" style="min-height: 40vh; padding-top: 150px;">
+            <h1 class="hero-title">Establish Comms.</h1>
+            <p class="hero-subtitle">Reach out for official inquiries, partnership proposals, or media relations.</p>
+        </section>
+
+        <section class="gsap-reveal">
+            <div class="grid-2">
+                <div class="glass-card">
+                    <h2 class="card-title" style="margin-bottom: 30px;">Direct Dispatch</h2>
+                    <form action="#">
+                        <div class="form-group">
+                            <label>Name / Designation</label>
+                            <input type="text" class="form-control" placeholder="John Doe, Sec-Gen" required>
+                        </div>
+                        <div class="form-group">
+                            <label>Secure Email</label>
+                            <input type="email" class="form-control" placeholder="john@example.com" required>
+                        </div>
+                        <div class="form-group">
+                            <label>Subject</label>
+                            <input type="text" class="form-control" placeholder="Partnership Inquiry" required>
+                        </div>
+                        <div class="form-group">
+                            <label>Message</label>
+                            <textarea class="form-control" rows="5" placeholder="Transmit your message here..." required></textarea>
+                        </div>
+                        <button type="submit" class="btn-primary" style="width: 100%;">Transmit Message</button>
+                    </form>
+                </div>
+
+                <div>
+                    <div class="glass-card" style="margin-bottom: 30px; border-color: rgba(88, 101, 242, 0.4);">
+                        <p class="team-role" style="color: #5865F2;">Community Headquarters</p>
+                        <h3 class="card-title">Join our Discord</h3>
+                        <p class="card-text" style="margin-bottom: 20px;">The official secure server for verified delegates, announcements, and immediate support.</p>
+                        <a href="#" class="btn-outline">Connect to Server</a>
+                    </div>
+
+                    <div class="glass-card" style="margin-bottom: 30px; border-color: rgba(225, 48, 108, 0.4);">
+                        <p class="team-role" style="color: #E1306C;">Media Updates</p>
+                        <h3 class="card-title">Instagram Intel</h3>
+                        <p class="card-text" style="margin-bottom: 20px;">Follow our official broadcast channel for audit reports and circuit updates.</p>
+                        <a href="#" class="btn-outline">@IDSC_Official</a>
+                    </div>
+
+                    <div class="glass-card">
+                        <p class="team-role">Grievance Routing</p>
+                        <h3 class="card-title">Report an Issue</h3>
+                        <p class="card-text" style="margin-bottom: 20px;">Have a complaint regarding a recent conference? Use our dedicated AI portal.</p>
+                        <a href="chat.html" class="btn-primary">Open Chat Portal</a>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+   <footer>
+        <h2 class="brand" style="font-size: 2rem;">IDSC.</h2>
+        <p class="footer-text">Elevating Diplomatic Standards in Central India and Beyond.</p>
+        
+        <div style="margin-top: 30px; display: flex; justify-content: center; gap: 20px;">
+            <a href="https://instagram.com/your_idsc_handle" target="_blank" class="btn-outline" style="border-color: #E1306C; color: #E1306C;">Instagram</a>
+            <a href="https://chat.whatsapp.com/your_invite_link" target="_blank" class="btn-outline" style="border-color: #25D366; color: #25D366;">WhatsApp Community</a>
+        </div>
+
+        <p class="footer-text" style="margin-top: 40px; opacity: 0.5;">&copy; 2026 Indore Diplomatic Standards Council. All rights reserved.</p>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>

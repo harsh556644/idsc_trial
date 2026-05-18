@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>IDSC | Indore Diplomatic Standards Council</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/gsap.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/ScrollTrigger.min.js"></script>
+</head>
+<body>
+    <div id="loader">IDSC.</div>
+    <div class="cursor-glow"></div>
+    
+    <nav>
+        <a href="index.html" class="brand">IDSC</a>
+        <div class="nav-links">
+            <a href="index.html">Home</a>
+            <a href="team.html">Team</a>
+            <a href="events.html">Events</a>
+            <a href="about.html">About</a>
+            <a href="contact.html">Contact</a>
+            <a href="upload-article.html">Submit Article</a>
+        </div>
+        <div>
+            <a href="join.html" class="btn-outline" style="margin-right: 15px;">Join Us</a>
+            <a href="login.html" class="btn-primary">Portal Login</a>
+        </div>
+    </nav>
+
+    
+   <main>
+        <section class="hero" style="min-height: 50vh; padding-top: 150px;">
+            <p class="team-role" style="margin-bottom: 15px;">Collaboration & Growth</p>
+            <h1 class="hero-title">Want to join the IDSC Team?</h1>
+            <p class="hero-subtitle">We are looking for dedicated individuals to help us manage collaborations, events, and community standards. Submit your details below.</p>
+        </section>
+
+        <section class="gsap-reveal">
+            <div class="glass-card" style="max-width: 800px; margin: 0 auto;">
+                <form action="#" method="POST">
+                    <div class="grid-2">
+                        <div class="form-group">
+                            <label>Full Name</label>
+                            <input type="text" class="form-control" placeholder="Your Name" required>
+                        </div>
+                        <div class="form-group">
+                            <label>Email Address</label>
+                            <input type="email" class="form-control" placeholder="you@example.com" required>
+                        </div>
+                    </div>
+                    <div class="form-group">
+                        <label>Department of Interest</label>
+                        <select class="form-control" style="appearance: none; background-color: rgba(0,0,0,0.3);">
+                            <option>Collaborations & Events</option>
+                            <option>Grievance & Delegate Affairs</option>
+                            <option>Media & Articles</option>
+                            <option>Operations</option>
+                        </select>
+                    </div>
+                    <div class="form-group">
+                        <label>Why do you want to join the core team?</label>
+                        <textarea class="form-control" rows="4" placeholder="Tell us about your skills..." required></textarea>
+                    </div>
+                    <button type="submit" class="btn-primary" style="width: 100%; padding: 15px; font-size: 1.1rem;">Submit Application</button>
+                </form>
+            </div>
+        </section>
+    </main>
+    
+    
+   <footer>
+        <h2 class="brand" style="font-size: 2rem;">IDSC.</h2>
+        <p class="footer-text">Elevating Diplomatic Standards in Central India and Beyond.</p>
+        
+        <div style="margin-top: 30px; display: flex; justify-content: center; gap: 20px;">
+            <a href="https://instagram.com/your_idsc_handle" target="_blank" class="btn-outline" style="border-color: #E1306C; color: #E1306C;">Instagram</a>
+            <a href="https://chat.whatsapp.com/your_invite_link" target="_blank" class="btn-outline" style="border-color: #25D366; color: #25D366;">WhatsApp Community</a>
+        </div>
+
+        <p class="footer-text" style="margin-top: 40px; opacity: 0.5;">&copy; 2026 Indore Diplomatic Standards Council. All rights reserved.</p>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>

@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>IDSC | Indore Diplomatic Standards Council</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/gsap.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/ScrollTrigger.min.js"></script>
+</head>
+<body>
+    <div id="loader">IDSC.</div>
+    <div class="cursor-glow"></div>
+    
+    <nav>
+        <a href="index.html" class="brand">IDSC</a>
+        <div class="nav-links">
+            <a href="index.html">Home</a>
+            <a href="team.html">Team</a>
+            <a href="events.html">Events</a>
+            <a href="about.html">About</a>
+            <a href="contact.html">Contact</a>
+            <a href="upload-article.html">Submit Article</a>
+        </div>
+        <div>
+            <a href="join.html" class="btn-outline" style="margin-right: 15px;">Join Us</a>
+            <a href="login.html" class="btn-primary">Portal Login</a>
+        </div>
+    </nav>
+
+    
+    <main>
+        <section class="hero" style="min-height: 40vh; padding-top: 120px;">
+            <h1 class="hero-title">Grievance & Support.</h1>
+            <p class="hero-subtitle">Connect with our AI intake agent or a live operative to report circuit issues.</p>
+        </section>
+        <section class="gsap-reveal">
+            <div class="chat-container" style="max-width: 900px; margin: 0 auto;">
+                <div class="chat-header">
+                    <div class="online-dot"></div>
+                    <div>
+                        <h3 style="font-family: 'Plus Jakarta Sans'; margin-bottom: 5px;">IDSC Central Support</h3>
+                        <p style="font-size: 0.8rem; color: var(--text-muted);">Secure Channel • Operatives Online</p>
+                    </div>
+                </div>
+                <div class="chat-body">
+                    <div class="msg msg-ai">
+                        <strong>System Protocol:</strong> Welcome to the IDSC Grievance Portal. Please state the nature of your report (e.g., Withheld Refund, Policy Violation, Unprofessional Conduct).
+                    </div>
+                    <div class="msg msg-user">
+                        I need to report an organizing committee that hasn't processed my refund for a cancelled event from 3 weeks ago.
+                    </div>
+                    <div class="msg msg-ai">
+                        <strong>System Protocol:</strong> Understood. Please provide the name of the conference and your registration ID. A live Operative will review this ticket immediately.
+                    </div>
+                </div>
+                <div class="chat-input">
+                    <input type="text" class="form-control" placeholder="Type your secure message...">
+                    <button class="btn-primary">Send Data</button>
+                </div>
+            </div>
+        </section>
+    </main>
+    
+  <footer>
+        <h2 class="brand" style="font-size: 2rem;">IDSC.</h2>
+        <p class="footer-text">Elevating Diplomatic Standards in Central India and Beyond.</p>
+        
+        <div style="margin-top: 30px; display: flex; justify-content: center; gap: 20px;">
+            <a href="https://instagram.com/your_idsc_handle" target="_blank" class="btn-outline" style="border-color: #E1306C; color: #E1306C;">Instagram</a>
+            <a href="https://chat.whatsapp.com/your_invite_link" target="_blank" class="btn-outline" style="border-color: #25D366; color: #25D366;">WhatsApp Community</a>
+        </div>
+
+        <p class="footer-text" style="margin-top: 40px; opacity: 0.5;">&copy; 2026 Indore Diplomatic Standards Council. All rights reserved.</p>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>

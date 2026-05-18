@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Submit Article | IDSC</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/gsap.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/ScrollTrigger.min.js"></script>
+</head>
+<body>
+    <div id="loader">IDSC.</div>
+    <div class="cursor-glow"></div>
+
+    <nav>
+        <a href="index.html" class="brand">IDSC</a>
+        <div class="nav-links">
+            <a href="index.html">Home</a>
+            <a href="team.html">Team</a>
+            <a href="events.html">Events</a>
+            <a href="about.html">About</a>
+            <a href="contact.html">Contact</a>
+            <a href="upload-article.html">Submit Article</a>
+        </div>
+        <div>
+            <a href="join.html" class="btn-outline" style="margin-right: 15px;">Join Us</a>
+            <a href="login.html" class="btn-primary">Portal Login</a>
+        </div>
+    </nav>
+
+    <main>
+        <section class="hero" style="min-height: 50vh; padding-top: 150px;">
+            <h1 class="hero-title">Share Your Insight.</h1>
+            <p class="hero-subtitle">Upload your article for IDSC review and help shape the next wave of diplomatic writing.</p>
+        </section>
+
+        <section class="gsap-reveal">
+            <div class="glass-card" style="max-width: 900px; margin: 0 auto;">
+                <h2 class="card-title" style="font-size: 2rem; margin-bottom: 20px;">Article Submission</h2>
+                <p class="card-text" style="margin-bottom: 30px;">Submit your idea, essay, or research note. We will review every submission and reach out with next steps.</p>
+                <form id="article-upload-form">
+                    <div class="form-group">
+                        <label>Article Title</label>
+                        <input type="text" id="article-title" class="form-control" placeholder="Enter article title" required>
+                    </div>
+                    <div class="grid-2">
+                        <div class="form-group">
+                            <label>Your Name</label>
+                            <input type="text" id="article-author" class="form-control" placeholder="Jane Doe" required>
+                        </div>
+                        <div class="form-group">
+                            <label>Email Address</label>
+                            <input type="email" id="author-email" class="form-control" placeholder="jane@example.com" required>
+                        </div>
+                    </div>
+                    <div class="form-group">
+                        <label>Short Summary</label>
+                        <textarea id="article-summary" class="form-control" rows="4" placeholder="Write a brief summary of your article." required></textarea>
+                    </div>
+                    <div class="form-group">
+                        <label>Article Content</label>
+                        <textarea id="article-content" class="form-control" rows="8" placeholder="Paste your article text here or attach a file below." required></textarea>
+                    </div>
+                    <div class="form-group">
+                        <label>Upload Article File (optional)</label>
+                        <input type="file" id="article-file" class="form-control" accept=".doc,.docx,.pdf,.txt">
+                    </div>
+                    <button type="submit" class="btn-primary" style="width: 100%; padding: 15px; font-size: 1rem;">Submit Article</button>
+                </form>
+                <div id="upload-status" style="margin-top: 25px;"></div>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <h2 class="brand" style="font-size: 2rem;">IDSC.</h2>
+        <p class="footer-text">Elevating Diplomatic Standards in Central India and Beyond.</p>
+        <div style="margin-top: 30px; display: flex; justify-content: center; gap: 20px;">
+            <a href="https://instagram.com/your_idsc_handle" target="_blank" class="btn-outline" style="border-color: #E1306C; color: #E1306C;">Instagram</a>
+            <a href="https://chat.whatsapp.com/your_invite_link" target="_blank" class="btn-outline" style="border-color: #25D366; color: #25D366;">WhatsApp Community</a>
+        </div>
+        <p class="footer-text" style="margin-top: 40px; opacity: 0.5;">&copy; 2026 Indore Diplomatic Standards Council. All rights reserved.</p>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
